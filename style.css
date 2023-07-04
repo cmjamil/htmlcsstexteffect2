@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    font-size: 200px;
+}
+
+h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px #B5C99A;
+}
+
+h2:nth-child(2){
+    color:#C3EDC0;
+    animation: water 2s linear infinite;
+}
+
+@keyframes water{
+    0%,100%{
+        clip-path: polygon(0 63%, 18% 57%, 41% 61%, 59% 52%, 79% 45%, 98% 51%, 99% 99%, 1% 98%);
+    }
+
+    60%{
+        clip-path: polygon(0 35%, 27% 40%, 45% 53%, 64% 57%, 83% 59%, 100% 67%, 99% 99%, 1% 98%);
+
+    }
+}
+
